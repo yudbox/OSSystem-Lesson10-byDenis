@@ -1,0 +1,18 @@
+.hero {
+    display: flex;
+}
+
+.hero__info {
+    padding: 30px;
+}
+
+.hero__info div {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgb(43, 23, 0);
+}
+
+.info__inFavore p {
+    color: rgb(253, 253, 253);
+    font-size: 24px;
+}

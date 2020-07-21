@@ -1,0 +1,21 @@
+.person a {
+    text-decoration: none;
+}
+
+.person__link {
+display: flex;
+align-items: center;
+}
+.person__link_name {
+    min-width: 200px;
+    color: rgb(11, 1, 56);
+    font-size: 24px;
+} 
+.person__link_avatar {
+    padding: 10px;
+}
+.person__link_avatar img {
+    display: inline-block;
+    width: 100px;
+    border-radius: 30%;
+}

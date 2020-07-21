@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/screens/NavBar/Navbar';
+import FavoriteList from './components/screens/FavoriteList/FavoriteList';
+import HeroDetail from './components/screens/HeroDetail/HeroDetail';
+import PeopleList from './components/screens/PeopleList/PeopleList';
+import Login from './components/screens/Login/Login';
+import { Route } from "react-router-dom";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App_container">
+        <NavBar />
+        <div className="main_container">
+          <Route path="/favorites" component={FavoriteList} exact />
+          <Route path="/herodetail/:id" component={HeroDetail} exact />
+          <Route path="/" component={PeopleList} exact />
+          <Route path="/login" component={Login} exact />
+        </div>
+      </div>
+
   );
 }
 

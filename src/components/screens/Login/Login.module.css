@@ -1,0 +1,26 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+  }
+  
+  .login button {
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .login_image{
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 10px;
+  }
+  
+  .login_image img{
+    display: block;
+    width: 20px;
+  }
+  
